@@ -1,0 +1,20 @@
+<div class="view view--full">
+  <div class="layout layout--col gap--space-between">
+    <div class="grid">
+      <div class="col col--span-6">
+        <img class="pokemon-logo" src="<%= Rails.application.credentials.base_url %>/images/plugins/pokéfacts.jpeg" alt="Pokémon Logo">
+        <div class="pokemon-fact">
+          <%= fact %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="title_bar">
+    <img class="image" src="<%= Rails.application.credentials.base_url %>/images/plugins/pokéfacts.jpeg" />
+    <h1 class="title">Pokémon Fact</h1>
+    <span class="instance"><%= instance_name %></span>
+  </div>
+</div>
+
+<%= render 'plugins/pokefacts/common' %>
