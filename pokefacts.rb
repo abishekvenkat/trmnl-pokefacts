@@ -1,6 +1,6 @@
 module Plugins
     class Pokefacts < Base
-      BASE_URL = 'https://pokefacts.vercel.app/api'.freeze
+      BASE_URL = 'https://pokefacts.vercel.app'.freeze
   
       def locals
         { fact: fetch_fact }
